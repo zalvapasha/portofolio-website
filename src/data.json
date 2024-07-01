@@ -1,0 +1,71 @@
+{
+  "stacks": [
+    {
+      "logo": "../src/assets/stackslogo/HTML5.png",
+      "name": "HTML"
+    },
+    {
+      "logo": "../src/assets/stackslogo/CSS3.png",
+      "name": "CSS"
+    },
+    {
+      "logo": "../src/assets/stackslogo/JavaScript.png",
+      "name": "JavaScript"
+    },
+    {
+      "logo": "../src/assets/stackslogo/ReactJS.png",
+      "name": "React JS"
+    },
+    {
+      "logo": "../src/assets/stackslogo/TailwindCSS.png",
+      "name": "Tailwind CSS"
+    },
+    {
+      "logo": "../src/assets/stackslogo/Github.png",
+      "name": "Github"
+    },
+    {
+      "logo": "../src/assets/stackslogo/Figma.png",
+      "name": "Figma"
+    },
+    {
+      "logo": "../src/assets/stackslogo/Photoshop.png",
+      "name": "Adobe Photoshop"
+    },
+    {
+      "logo": "../src/assets/stackslogo/Illustrator.png",
+      "name": "Adobe Illustrator"
+    },
+    {
+      "logo": "../src/assets/stackslogo/PremierePro.png",
+      "name": "Adobe Premiere Pro"
+    }
+  ],
+
+  "projects": [
+    {
+      "icon": "../src/assets/projectsicon/autrol.svg",
+      "title": "Traffic Violation Detection",
+      "video": "../src/assets/projectsvideo/autrol.mp4",
+      "description": "Our Traffic Violation Detection System uses a React.js frontend and Python Flask backend with YOLOv7 to detect real-time traffic violations via drones, enhancing road safety with advanced AI and drone technology.",
+      "websiteLink": "https://www.linkedin.com/in/zalva-ihilani-pasha-b88506237/",
+      "githubLink": "https://github.com/zalvapasha"
+    },
+    {
+      "icon": "../src/assets/projectsicon/autrol.svg",
+      "title": "Traffic Violation Detection",
+      "video": "../src/assets/projectsvideo/autrol.mp4",
+      "description": "Our Traffic Violation Detection System uses a React.js frontend and Python Flask backend with YOLOv7 to detect real-time traffic violations via drones, enhancing road safety with advanced AI and drone technology.",
+      "websiteLink": "https://www.linkedin.com/in/zalva-ihilani-pasha-b88506237/",
+      "githubLink": "https://github.com/zalvapasha"
+    },
+    {
+      "icon": "../src/assets/projectsicon/autrol.svg",
+      "title": "Traffic Violation Detection",
+      "video": "../src/assets/projectsvideo/autrol.mp4",
+      "description": "Our Traffic Violation Detection System uses a React.js frontend and Python Flask backend with YOLOv7 to detect real-time traffic violations via drones, enhancing road safety with advanced AI and drone technology.",
+      "websiteLink": "https://www.linkedin.com/in/zalva-ihilani-pasha-b88506237/",
+      "githubLink": "https://github.com/zalvapasha"
+    }
+  ]
+}
