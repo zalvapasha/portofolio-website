@@ -21,14 +21,14 @@ const SkillsAndTools = () => {
 
   return (
     <div className="w-full h-full flex flex-col justify-center relative p-8">
-      <h2 className="text-white text-left text-3xl w-11/12 ml-2 mb-12 z-10">
+      <h2 className="text-black dark:text-white text-left text-3xl w-11/12 ml-2 mb-12 z-10">
         Stacks I use
       </h2>
       <div className="w-full h-16 mx-auto">
         <Slider {...settings}>
           {stacksData.stacks.map((stack, index) => (
             <div key={index} className="flex">
-              <div className="flex justify-center items-center bg-box rounded-md p-3 flex-shrink-0">
+              <div className="flex justify-center items-center bg-boxLight dark:bg-boxDark rounded-md p-3 flex-shrink-0">
                 <img src={stack.logo} alt={stack.name} className="w-10 h-10" />
               </div>
             </div>

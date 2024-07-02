@@ -21,13 +21,15 @@ const NavBar = () => {
   ];
 
   return (
-    <nav className="flex z-40 w-full h-auto items-center justify-center data-[menu-open=true]:border-none sticky top-0 inset-x-0 backdrop-blur-lg data-[menu-open=true]:backdrop-blur-xl backdrop-saturate-150 bg-background/70">
-      <ul className="z-40 gap-4 flex-row relative flex-nowrap items-center max-w-[1024px] bg-content2 rounded-xl h-11 my-8 flex justify-center w-auto px-2  bg-zinc-800 p-2 ">
+    <nav className="flex z-40 w-full h-auto items-center justify-center sticky top-0 inset-x-0 backdrop-blur-lg">
+      <ul className="z-40 gap-4 flex-row relative bg-cardLight border-borderLight dark:bg-cardDark dark:border-borderDark border-[1px] flex-nowrap items-center max-w-[1024px] rounded-xl h-11 my-8 flex justify-center w-auto px-2 p-2 ">
         {items.map(({ id, name, path, active }) => (
           <li
             key={id}
             className={`whitespace-nowrap font-medium items-center text-sm py-1 px-2 ${
-              active ? "text-white bg-zinc-600 rounded-md" : "text-white/60"
+              active
+                ? "text-black dark:text-white bg-boxLight dark:bg-boxDark rounded-md"
+                : "dark:text-white/60 text-black/60"
             }`}
           >
             <Link to={path}>{name}</Link>
