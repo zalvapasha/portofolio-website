@@ -20,14 +20,15 @@ const Project = () => {
           className="grid grid-cols-2 lg:grid-rows-3 lg:grid-cols-4 gap-5 pb-4 overflow-hidden"
           key={index}
         >
-          <div className="flex lg:hidden items-center text-3xl text-left font-bold text-white col-span-full lg:row-start-1 lg:row-end-2 lg:col-start-1 lg:col-end-5 ">
-            <span className="bg-boxLight dark:bg-boxDark p-2 rounded-md mr-2 flex-shrink-0">
+          <div className="flex lg:hidden items-center text-textLight1 dark:text-textDark1 text-lg xxs:texl-2xl xs:text-3xl text-left ml-4 font-bold col-span-full lg:row-start-1 lg:row-end-2 lg:col-start-1 lg:col-end-5">
+            <span className="bg-cardLight border-borderLight dark:border-borderDark dark:bg-boxDark border-[1px] text-textLight1 dark:text-textDark1 p-2 rounded-xl mr-2 flex-shrink-0">
               <img
                 src={project.icon}
                 alt="Project Icon"
                 style={{ width: "24px", height: "24px" }}
               />
             </span>
+
             {project.title}
           </div>
 
@@ -40,7 +41,8 @@ const Project = () => {
                 objectFit: "cover",
               }}
               src={project.video}
-              // autoPlay
+              playsInline
+              autoPlay
               muted
               loop
             />
@@ -50,22 +52,38 @@ const Project = () => {
             className={`${cardMode} rounded-3xl border-[1px] col-start-1 col-end-3 lg:row-start-1 lg:row-end-3 lg:col-start-3 lg:col-end-5`}
           >
             <div className="flex justify-center flex-col p-5 text-left text-gray-400 text-lg gap-4">
-              <div className="hidden lg:flex items-center text-white text-3xl font-bold">
-                <span className="flex bg-boxLight dark:bg-boxDark p-2 rounded-md mr-2">
+              <div className="hidden lg:flex items-center text-textLight1 dark:text-textDark1 text-3xl font-bold">
+                <span className="flex bg-boxLight border-borderLight dark:border-borderDark dark:bg-boxDark border-[1px] p-2 rounded-xl mr-2">
                   <img
                     src={project.icon}
                     alt="Project Icon"
-                    style={{ width: "24px", height: "24px", color: "white" }}
+                    style={{ width: "24px", height: "24px" }}
                   />
                 </span>
                 {project.title}
               </div>
-              {project.description}
+
+              <div className="text-textLight3 dark:text-textDark3 text-base md:text-xl lg:text-base">
+                {project.description}
+              </div>
+
+              <div className="text-textLight1 dark:text-textDark1 font-">
+                <ul className="gap-2 flex flex-wrap">
+                  {project.technologies.map((tech, index) => (
+                    <li
+                      key={index}
+                      className="bg-boxLight dark:bg-boxDark text-sm px-2 w-fit rounded-full"
+                    >
+                      {tech}
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
           </div>
 
           <div
-            className={`${cardMode} rounded-3xl hover:bg-zinc-600 border-[1px] p-5 lg:col-start-3 lg:col-end-3 lg:row-start-3 lg:row-end-3`}
+            className={`${cardMode} rounded-3xl hover:bg-boxLight dark:hover:bg-boxDark border-[1px] p-5 lg:col-start-3 lg:col-end-3 lg:row-start-3 lg:row-end-3 transition duration-500 ease-in-out`}
           >
             <a
               href={project.websiteLink}
@@ -73,11 +91,15 @@ const Project = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <TbLink size={50} color="white" className="flex-shrink-0" />
+              <TbLink
+                size={50}
+                color={theme === "dark" ? "#fbfbfb" : "#262626"}
+                className="flex-shrink-0"
+              />
             </a>
           </div>
           <div
-            className={`${cardMode} rounded-3xl hover:bg-zinc-600 border-[1px] p-5 lg:col-start-4 lg:col-end-4 lg:row-start-3 lg:row-end-3`}
+            className={`${cardMode} rounded-3xl hover:bg-boxLight dark:hover:bg-boxDark border-[1px] p-5 lg:col-start-4 lg:col-end-4 lg:row-start-3 lg:row-end-3 transition duration-500 ease-in-out`}
           >
             <a
               href={project.githubLink}
@@ -85,7 +107,11 @@ const Project = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaGithub size={50} color="white" className="flex-shrink-0" />
+              <FaGithub
+                size={50}
+                color={theme === "dark" ? "#fbfbfb" : "#262626"}
+                className="flex-shrink-0"
+              />
             </a>
           </div>
         </div>

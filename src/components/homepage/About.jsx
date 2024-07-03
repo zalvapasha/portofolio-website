@@ -7,7 +7,7 @@ const About = () => {
         <h2 className="text-textLight3 dark:text-textDark3 tracking-[.4rem] mb-4 text-lg">
           ABOUT
         </h2>
-        <h3 className="text-textLight1 dark:text-textDark1 text-2xl">
+        <h3 className="text-textLight1 dark:text-textDark1 text-xl xxs:text-2xl ">
           Passionate about design and enjoy solving problems.
         </h3>
       </div>

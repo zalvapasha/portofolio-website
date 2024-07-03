@@ -44,28 +44,45 @@
 
   "projects": [
     {
-      "icon": "../src/assets/projectsicon/autrol.svg",
-      "title": "Traffic Violation Detection",
+      "icon": "../src/assets/projectsicon/movio.svg",
+      "title": "Movio Data App",
       "video": "../src/assets/projectsvideo/autrol.mp4",
-      "description": "Our Traffic Violation Detection System uses a React.js frontend and Python Flask backend with YOLOv7 to detect real-time traffic violations via drones, enhancing road safety with advanced AI and drone technology.",
+      "description": "Movio is a movie database app inspired by IMDb. It allows users to discover detailed information on movies and TV shows. With its intuitive interface, Movio makes exploring cinema easy and enjoyable.",
       "websiteLink": "https://www.linkedin.com/in/zalva-ihilani-pasha-b88506237/",
-      "githubLink": "https://github.com/zalvapasha"
+      "githubLink": "https://github.com/zalvapasha/movio-tmdb",
+      "technologies": [
+        "React JS",
+        "JavaScript",
+        "Tailwind CSS",
+        "Axios",
+        "TMDB API"
+      ]
     },
     {
       "icon": "../src/assets/projectsicon/autrol.svg",
       "title": "Traffic Violation Detection",
       "video": "../src/assets/projectsvideo/autrol.mp4",
-      "description": "Our Traffic Violation Detection System uses a React.js frontend and Python Flask backend with YOLOv7 to detect real-time traffic violations via drones, enhancing road safety with advanced AI and drone technology.",
-      "websiteLink": "https://www.linkedin.com/in/zalva-ihilani-pasha-b88506237/",
-      "githubLink": "https://github.com/zalvapasha"
+      "description": "My Traffic Violation Detection System uses a React.js frontend and Python Flask backend with YOLOv7 to detect real-time traffic violations via drones, enhancing road safety with advanced AI and drone technology.",
+      "websiteLink": "None",
+      "githubLink": "https://github.com/zalvapasha",
+      "technologies": [
+        "React JS",
+        "JavaScript",
+        "Tailwind CSS",
+        "Axios",
+        "Flask",
+        "YOLOv7",
+        "Mona Server"
+      ]
     },
     {
       "icon": "../src/assets/projectsicon/autrol.svg",
       "title": "Traffic Violation Detection",
       "video": "../src/assets/projectsvideo/autrol.mp4",
-      "description": "Our Traffic Violation Detection System uses a React.js frontend and Python Flask backend with YOLOv7 to detect real-time traffic violations via drones, enhancing road safety with advanced AI and drone technology.",
+      "description": "Traffic Violation Detection System uses a React.js frontend and Python Flask backend with YOLOv7 to detect real-time traffic violations via drones, enhancing road safety with advanced AI and drone technology.",
       "websiteLink": "https://www.linkedin.com/in/zalva-ihilani-pasha-b88506237/",
-      "githubLink": "https://github.com/zalvapasha"
+      "githubLink": "https://github.com/zalvapasha",
+      "technologies": ["React.js", "Tailwind CSS", "Flask"]
     }
   ]
 }

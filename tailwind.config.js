@@ -6,6 +6,7 @@ export default {
     extend: {
       fontFamily: {
         sans: ["DM Sans", "sans-serif"],
+        mono: ["Inter", "monospace"],
       },
       colors: {
         // Dark Mode
@@ -19,9 +20,9 @@ export default {
 
         // Light Mode
         backgroundLight: "#f0f0f0",
-        cardLight: "#fbfbfb",
+        cardLight: "#ffffff",
         borderLight: "#dfdfdf",
-        boxLight: "#dfdfdf",
+        boxLight: "#eef0f1",
         textLight1: "#262626",
         textLight2: "#666666",
         textLight3: "#8c8c8c",

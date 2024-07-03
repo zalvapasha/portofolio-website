@@ -16,10 +16,10 @@ const Resume = () => {
           Unlock my professional journey—download my resume now!
         </h3>
         <a href={resumePDF} download="resume.pdf">
-          <button className="border-borderlight border-[1px] rounded-full p-3 absolute right-8 bottom-7">
+          <button className="border-borderLight dark:border-borderDark border-[1px] hover:bg-boxLight dark:hover:bg-boxDark rounded-full p-3 absolute right-8 bottom-7 transition duration-500 ease-in-out">
             <TbDownload
               size={20}
-              color={theme === "dark" ? "white" : "black"}
+              color={theme === "dark" ? "#fbfbfb" : "#262626"}
             />
           </button>
         </a>
