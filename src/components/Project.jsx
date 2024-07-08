@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import projectsData from "../data.json";
+import projectsData from "../data.js";
 import { FaGithub } from "react-icons/fa6";
 import { TbLink } from "react-icons/tb";
 import { ThemeContext } from "../context/ThemeContext";
