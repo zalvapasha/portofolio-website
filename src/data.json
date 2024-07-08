@@ -46,15 +46,17 @@
     {
       "icon": "../src/assets/projectsicon/movio.svg",
       "title": "Movio Data App",
-      "video": "../src/assets/projectsvideo/autrol.mp4",
+      "video": "../src/assets/projectsvideo/movio.mp4",
+      "poster": "../src/assets/projectsposter/movio.webp",
       "description": "Movio is a movie database app inspired by IMDb. It allows users to discover detailed information on movies and TV shows. With its intuitive interface, Movio makes exploring cinema easy and enjoyable.",
-      "websiteLink": "https://www.linkedin.com/in/zalva-ihilani-pasha-b88506237/",
+      "websiteLink": "https://movio-tmdb.vercel.app/",
       "githubLink": "https://github.com/zalvapasha/movio-tmdb",
       "technologies": [
         "React JS",
         "JavaScript",
         "Tailwind CSS",
         "Axios",
+        "React Slick",
         "TMDB API"
       ]
     },
@@ -62,9 +64,10 @@
       "icon": "../src/assets/projectsicon/autrol.svg",
       "title": "Traffic Violation Detection",
       "video": "../src/assets/projectsvideo/autrol.mp4",
-      "description": "My Traffic Violation Detection System uses a React.js frontend and Python Flask backend with YOLOv7 to detect real-time traffic violations via drones, enhancing road safety with advanced AI and drone technology.",
+      "poster": "../src/assets/projectsposter/autrol.webp",
+      "description": "Our Traffic Violation Detection System identifies violations such as motorcycles without helmets and vehicles not stopping at pedestrian crossings. It also reads vehicle number plates to enforce traffic regulations effectively.",
       "websiteLink": "None",
-      "githubLink": "https://github.com/zalvapasha",
+      "githubLink": "https://github.com/zalvapasha/Traffic-Violation-Detection",
       "technologies": [
         "React JS",
         "JavaScript",
@@ -76,13 +79,14 @@
       ]
     },
     {
-      "icon": "../src/assets/projectsicon/autrol.svg",
-      "title": "Traffic Violation Detection",
-      "video": "../src/assets/projectsvideo/autrol.mp4",
-      "description": "Traffic Violation Detection System uses a React.js frontend and Python Flask backend with YOLOv7 to detect real-time traffic violations via drones, enhancing road safety with advanced AI and drone technology.",
-      "websiteLink": "https://www.linkedin.com/in/zalva-ihilani-pasha-b88506237/",
-      "githubLink": "https://github.com/zalvapasha",
-      "technologies": ["React.js", "Tailwind CSS", "Flask"]
+      "icon": "../src/assets/projectsicon/ease.svg",
+      "title": "Ease To-Do List App",
+      "video": "../src/assets/projectsvideo/ease.mp4",
+      "poster": "../src/assets/projectsposter/ease.webp",
+      "description": "Effortlessly manage tasks with our intuitive to-do list app. Features include adding, deleting, completing, updating, and organizing tasks for streamlined productivity.",
+      "websiteLink": "https://ease-to-do.vercel.app/",
+      "githubLink": "https://github.com/zalvapasha/to-do-list-app",
+      "technologies": ["React JS", "JavaScript", "Tailwind CSS", "ShadCN UI"]
     }
   ]
 }

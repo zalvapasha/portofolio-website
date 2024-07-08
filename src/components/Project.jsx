@@ -28,7 +28,6 @@ const Project = () => {
                 style={{ width: "24px", height: "24px" }}
               />
             </span>
-
             {project.title}
           </div>
 
@@ -41,6 +40,7 @@ const Project = () => {
                 objectFit: "cover",
               }}
               src={project.video}
+              poster={project.poster}
               playsInline
               autoPlay
               muted
@@ -82,24 +82,31 @@ const Project = () => {
             </div>
           </div>
 
-          <div
-            className={`${cardMode} rounded-3xl hover:bg-boxLight dark:hover:bg-boxDark border-[1px] p-5 lg:col-start-3 lg:col-end-3 lg:row-start-3 lg:row-end-3 transition duration-500 ease-in-out`}
-          >
-            <a
-              href={project.websiteLink}
-              className="min-h-full flex justify-center items-center"
-              target="_blank"
-              rel="noopener noreferrer"
+          {project.websiteLink !== "None" && (
+            <div
+              className={`${cardMode} rounded-3xl hover:bg-boxLight dark:hover:bg-boxDark border-[1px] p-5 lg:col-start-3 lg:col-end-3 lg:row-start-3 lg:row-end-3 transition duration-500 ease-in-out`}
             >
-              <TbLink
-                size={50}
-                color={theme === "dark" ? "#fbfbfb" : "#262626"}
-                className="flex-shrink-0"
-              />
-            </a>
-          </div>
+              <a
+                href={project.websiteLink}
+                className="min-h-full flex justify-center items-center"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <TbLink
+                  size={50}
+                  color={theme === "dark" ? "#fbfbfb" : "#262626"}
+                  className="flex-shrink-0"
+                />
+              </a>
+            </div>
+          )}
+
           <div
-            className={`${cardMode} rounded-3xl hover:bg-boxLight dark:hover:bg-boxDark border-[1px] p-5 lg:col-start-4 lg:col-end-4 lg:row-start-3 lg:row-end-3 transition duration-500 ease-in-out`}
+            className={`${cardMode} rounded-3xl hover:bg-boxLight dark:hover:bg-boxDark border-[1px] p-5  transition duration-500 ease-in-out ${
+              project.websiteLink === "None"
+                ? "lg:col-start-3 lg:col-end-5 lg:row-start-3 lg:row-end-3"
+                : "lg:col-start-4 lg:col-end-4 lg:row-start-3 lg:row-end-3"
+            } `}
           >
             <a
               href={project.githubLink}
