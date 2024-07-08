@@ -15,7 +15,7 @@ const Project = () => {
 
   return (
     <div className="flex flex-col gap-20">
-      {projectsData.projects.map((project, index) => (
+      {projectsData.map((project, index) => (
         <div
           className="grid grid-cols-2 lg:grid-rows-3 lg:grid-cols-4 gap-5 pb-4 overflow-hidden"
           key={index}

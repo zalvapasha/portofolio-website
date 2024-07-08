@@ -1,52 +1,45 @@
+import htmlLogo from "../src/assets/stackslogo/HTML5.png";
+import cssLogo from "../src/assets/stackslogo/CSS3.png";
+import jsLogo from "../src/assets/stackslogo/JavaScript.png";
+import reactLogo from "../src/assets/stackslogo/ReactJS.png";
+import tailwindLogo from "../src/assets/stackslogo/TailwindCSS.png";
+import githubLogo from "../src/assets/stackslogo/Github.png";
+import figmaLogo from "../src/assets/stackslogo/Figma.png";
+import photoshopLogo from "../src/assets/stackslogo/Photoshop.png";
+import illustratorLogo from "../src/assets/stackslogo/Illustrator.png";
+import premiereLogo from "../src/assets/stackslogo/PremierePro.png";
+
+import movioIcon from "../src/assets/projectsicon/movio.svg";
+import movioVideo from "../src/assets/projectsvideo/movio.mp4";
+import movioPoster from "../src/assets/projectsposter/movio.webp";
+
+import autrolIcon from "../src/assets/projectsicon/autrol.svg";
+import autrolVideo from "../src/assets/projectsvideo/autrol.mp4";
+import autrolPoster from "../src/assets/projectsposter/autrol.webp";
+
+import easeIcon from "../src/assets/projectsicon/ease.svg";
+import easeVideo from "../src/assets/projectsvideo/ease.mp4";
+import easePoster from "../src/assets/projectsposter/ease.webp";
+
 const stacksData = [
-  {
-    name: "HTML",
-    logo: require("../src/assets/stackslogo/HTML5.png").default,
-  },
-  {
-    name: "CSS",
-    logo: require("../src/assets/stackslogo/CSS3.png").default,
-  },
-  {
-    name: "JavaScript",
-    logo: require("../src/assets/stackslogo/JavaScript.png").default,
-  },
-  {
-    name: "React JS",
-    logo: require("../src/assets/stackslogo/ReactJS.png").default,
-  },
-  {
-    name: "Tailwind CSS",
-    logo: require("../src/assets/stackslogo/TailwindCSS.png").default,
-  },
-  {
-    name: "Github",
-    logo: require("../src/assets/stackslogo/Github.png").default,
-  },
-  {
-    name: "Figma",
-    logo: require("../src/assets/stackslogo/Figma.png").default,
-  },
-  {
-    name: "Adobe Photoshop",
-    logo: require("../src/assets/stackslogo/Photoshop.png").default,
-  },
-  {
-    name: "Adobe Illustrator",
-    logo: require("../src/assets/stackslogo/Illustrator.png").default,
-  },
-  {
-    name: "Adobe Premiere Pro",
-    logo: require("../src/assets/stackslogo/PremierePro.png").default,
-  },
+  { logo: htmlLogo, name: "HTML" },
+  { logo: cssLogo, name: "CSS" },
+  { logo: jsLogo, name: "JavaScript" },
+  { logo: reactLogo, name: "React JS" },
+  { logo: tailwindLogo, name: "Tailwind CSS" },
+  { logo: githubLogo, name: "Github" },
+  { logo: figmaLogo, name: "Figma" },
+  { logo: photoshopLogo, name: "Adobe Photoshop" },
+  { logo: illustratorLogo, name: "Adobe Illustrator" },
+  { logo: premiereLogo, name: "Adobe Premiere Pro" },
 ];
 
 const projectsData = [
   {
+    icon: movioIcon,
     title: "Movio Data App",
-    icon: require("../src/assets/projectsicon/movio.svg").default,
-    video: require("../src/assets/projectsvideo/movio.mp4").default,
-    poster: require("../src/assets/projectsposter/movio.webp").default,
+    video: movioVideo,
+    poster: movioPoster,
     description:
       "Movio is a movie database app inspired by IMDb. It allows users to discover detailed information on movies and TV shows. With its intuitive interface, Movio makes exploring cinema easy and enjoyable.",
     websiteLink: "https://movio-tmdb.vercel.app/",
@@ -61,10 +54,10 @@ const projectsData = [
     ],
   },
   {
+    icon: autrolIcon,
     title: "Traffic Violation Detection",
-    icon: require("../src/assets/projectsicon/autrol.svg").default,
-    video: require("../src/assets/projectsvideo/autrol.mp4").default,
-    poster: require("../src/assets/projectsposter/autrol.webp").default,
+    video: autrolVideo,
+    poster: autrolPoster,
     description:
       "Our Traffic Violation Detection System identifies violations such as motorcycles without helmets and vehicles not stopping at pedestrian crossings. It also reads vehicle number plates to enforce traffic regulations effectively.",
     websiteLink: "None",
@@ -80,10 +73,10 @@ const projectsData = [
     ],
   },
   {
+    icon: easeIcon,
     title: "Ease To-Do List App",
-    icon: require("../src/assets/projectsicon/ease.svg").default,
-    video: require("../src/assets/projectsvideo/ease.mp4").default,
-    poster: require("../src/assets/projectsposter/ease.webp").default,
+    video: easeVideo,
+    poster: easePoster,
     description:
       "Effortlessly manage tasks with our intuitive to-do list app. Features include adding, deleting, completing, updating, and organizing tasks for streamlined productivity.",
     websiteLink: "https://ease-to-do.vercel.app/",
