@@ -104,7 +104,7 @@ const Project = () => {
           <div
             className={`${cardMode} rounded-3xl hover:bg-boxLight dark:hover:bg-boxDark border-[1px] p-5  transition duration-500 ease-in-out ${
               project.websiteLink === "None"
-                ? "lg:col-start-3 lg:col-end-5 lg:row-start-3 lg:row-end-3"
+                ? "col-span-full lg:col-start-3 lg:col-end-5 lg:row-start-3 lg:row-end-3"
                 : "lg:col-start-4 lg:col-end-4 lg:row-start-3 lg:row-end-3"
             } `}
           >
