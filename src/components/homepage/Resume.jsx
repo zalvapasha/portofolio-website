@@ -15,7 +15,7 @@ const Resume = () => {
         <h3 className="text-black dark:text-white text-lg ">
           Unlock my professional journey—download my resume now!
         </h3>
-        <a href={resumePDF} download="resume.pdf">
+        <a href={resumePDF} target="_blank" rel="noreferrer">
           <button className="border-borderLight dark:border-borderDark border-[1px] hover:bg-boxLight dark:hover:bg-boxDark rounded-full p-3 absolute right-8 bottom-7 transition duration-500 ease-in-out">
             <TbDownload
               size={20}
