@@ -5,34 +5,32 @@ import HomePage from "../pages/HomePage";
 import ProjectsPage from "../pages/ProjectsPage";
 import ContactPage from "../pages/ContactPage";
 
+const routes = [
+  {
+    path: "/",
+    element: <HomePage />,
+  },
+  {
+    path: "/projects",
+    element: <ProjectsPage />,
+  },
+  {
+    path: "/contact",
+    element: <ContactPage />,
+  },
+];
+
 const AppRouter = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route
-          path="/"
-          element={
-            <MainLayout>
-              <HomePage />
-            </MainLayout>
-          }
-        />
-        <Route
-          path="/projects"
-          element={
-            <MainLayout>
-              <ProjectsPage />
-            </MainLayout>
-          }
-        />
-        <Route
-          path="/contact"
-          element={
-            <MainLayout>
-              <ContactPage />
-            </MainLayout>
-          }
-        />
+        {routes.map((route, index) => (
+          <Route
+            key={index}
+            path={route.path}
+            element={<MainLayout>{route.element}</MainLayout>}
+          />
+        ))}
       </Routes>
     </BrowserRouter>
   );
